@@ -1,0 +1,5 @@
+{
+  "name": "VoiceRx – AI Health Copilot",
+  "description": "An AI-powered healthcare assistant with voice, chat, and health management features.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"]
+}
