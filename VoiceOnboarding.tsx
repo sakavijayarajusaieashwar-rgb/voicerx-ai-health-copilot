@@ -10,8 +10,9 @@ import { toast } from 'sonner';
 import { GoogleGenAI, Modality } from "@google/genai";
 import { cn } from '../lib/utils';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY
+});
 const QUESTIONS = [
   { id: 'name', label: 'What is your name?', icon: <User />, key: 'name', placeholder: 'e.g. John Doe' },
   { id: 'age', label: 'How old are you?', icon: <Activity />, key: 'age', placeholder: 'e.g. 28' },

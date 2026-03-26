@@ -5,7 +5,9 @@ import { Utensils, RefreshCw } from 'lucide-react';
 import { DietPlan } from '../types';
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY
+});
 
 export function Diet() {
   const [plan, setPlan] = useState<DietPlan | null>(null);

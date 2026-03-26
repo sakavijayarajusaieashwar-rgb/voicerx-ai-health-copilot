@@ -7,7 +7,9 @@ import { GoogleGenAI, Modality } from "@google/genai";
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import { cn } from '../lib/utils';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY
+});
 
 export function Files() {
   const [files, setFiles] = useState<any[]>([]);
