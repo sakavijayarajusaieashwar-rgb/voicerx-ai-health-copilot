@@ -35,10 +35,19 @@ VoiceRx provides:
 
 * Voice-based onboarding
 * AI health chat (Mistral-powered)
+* Backup AI responses (Gemini integration)
 * Medication tracking & reminders
 * Diet & nutrition recommendations
 * Medical report analysis (upload + demo sample)
 * Emergency-aware responses
+
+---
+
+## 🤖 AI APIs Used
+
+* **Mistral AI** → Primary chat and reasoning engine
+* **Google Gemini** → Backup AI / fallback responses
+* **Murf AI** → Text-to-speech voice output
 
 ---
 
@@ -66,9 +75,10 @@ VoiceRx provides:
 
 ### AI & Voice
 
-* Mistral AI (chat & reasoning)
-* Murf AI (text-to-speech)
-* Web Speech API (speech-to-text)
+* Mistral AI
+* Google Gemini
+* Murf AI
+* Web Speech API
 
 ---
 
@@ -76,8 +86,9 @@ VoiceRx provides:
 
 Create a `.env` file:
 
-```
+```env
 VITE_MISTRAL_API_KEY=your_mistral_key
+VITE_GEMINI_API_KEY=your_gemini_key
 VITE_MURF_API_KEY=your_murf_key
 JWT_SECRET=your_secret
 ```
@@ -88,7 +99,7 @@ JWT_SECRET=your_secret
 
 ### 1. Clone repo
 
-```
+```bash
 git clone https://github.com/your-username/voicerx-ai-health-copilot.git
 cd voicerx-ai-health-copilot
 ```
@@ -97,7 +108,7 @@ cd voicerx-ai-health-copilot
 
 ### 2. Install dependencies
 
-```
+```bash
 npm install
 ```
 
@@ -105,7 +116,7 @@ npm install
 
 ### 3. Run project
 
-```
+```bash
 npm run dev
 ```
 
@@ -146,7 +157,7 @@ VoiceRx aims to become a **daily AI health companion**, making healthcare more h
 
 ## 🏷️ Tags
 
-#AI #Healthcare #VoiceAI #Mistral #MurfAI #Startup #Hackathon #murf-ai
+#AI #Healthcare #VoiceAI #Mistral #Gemini #MurfAI #Startup #Hackathon #murf-ai
 
 ---
 
