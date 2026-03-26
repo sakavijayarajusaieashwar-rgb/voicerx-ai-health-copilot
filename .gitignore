@@ -2,7 +2,11 @@ node_modules/
 build/
 dist/
 coverage/
+.vite/
+.cache/
 .DS_Store
 *.log
+*.local
+
 .env*
 !.env.example
